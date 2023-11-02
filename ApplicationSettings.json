@@ -1,0 +1,15 @@
+{
+  "IntegrateWithOtherApplication": {
+    "Password": "Vkr(B3~LCIGN"
+  },
+  "ShareCommandContainers": [],
+  "ListviewLoadingIndicatorSettings": {},
+  "GlobalProperties": [],
+  "WebSitePort": 56268,
+  "UserServicePort": 59773,
+  "StartDateFiscalYear": 4,
+  "BaseOnStartingMonth": true,
+  "CellTypeSpinInfos": [],
+  "StatusCacheTableName": "FGC_StatusInfo",
+  "AuditingList": {}
+}

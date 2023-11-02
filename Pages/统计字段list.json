@@ -1,0 +1,552 @@
+{
+  "Rows": {
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "1,2": "统计各角色下的用户",
+    "2,22": "查询",
+    "12,2": "Rolename",
+    "12,11": "roleanduser",
+    "12,22": "获取数据导入listview",
+    "20,2": "产品类别",
+    "28,11": "console 报错",
+    "31,11": "白菜,西兰花,青菜,土豆"
+  },
+  "AttachInfos": {
+    "2,2": {
+      "ListViewInfo": {
+        "Name": "Listview1",
+        "TableName": "Role User Relation View",
+        "RowIndex": 2,
+        "ColumnIndex": 2,
+        "RowCount": 9,
+        "ColumnCount": 19,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.ListCESqlCondition, ForguncyDataAccess",
+          "CompareType": 2,
+          "ColumnBindingInfo": {
+            "TableName": "Role User Relation View",
+            "ColumnName": "roleanduser",
+            "GUID": "d9c2a8ac-46be-4d36-9816-314e96c54d18"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=统计字段list!W9"
+          }
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "2,22": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "Role User Relation View",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.ListCESqlCondition, ForguncyDataAccess",
+              "CompareType": 2,
+              "ColumnBindingInfo": {
+                "TableName": "Role User Relation View",
+                "ColumnName": "roleanduser",
+                "GUID": "6bb6e473-f274-4c60-a1fb-1a64a24d621b"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=统计字段list!W6"
+              }
+            },
+            "ID": "7da03ae4b1f1475bb599d337896a71dd"
+          }
+        ],
+        "Text": "查询",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "2,29": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ExportPageToPdfCommand, ServerDesignerCommon",
+            "NewOtherName": ""
+          }
+        ],
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "2,37": {
+      "ListViewInfo": {
+        "Name": "Listview5",
+        "TableName": "mysql数据库",
+        "RowIndex": 2,
+        "ColumnIndex": 37,
+        "RowCount": 14,
+        "ColumnCount": 22,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "IsTotalRowVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "3,2": {
+      "NameUsedInJavaScript": "RoleName",
+      "BindingInfo": {
+        "TableName": "Role User Relation View",
+        "ColumnName": "RoleId",
+        "GUID": "03574fab-30e2-4f39-a7ce-527ac078f47a",
+        "RelationBinding": {
+          "RelatedTable": "Role Info View",
+          "RelatedColumn": "RoleId",
+          "DisplayColumn": "RoleName"
+        }
+      }
+    },
+    "3,11": {
+      "NameUsedInJavaScript": "roleanduser",
+      "BindingInfo": {
+        "TableName": "Role User Relation View",
+        "ColumnName": "roleanduser",
+        "GUID": "c13872fd-17e0-49ae-9214-a9d92f130e35"
+      }
+    },
+    "3,37": {
+      "NameUsedInJavaScript": "类别",
+      "BindingInfo": {
+        "TableName": "mysql数据库",
+        "ColumnName": "类别",
+        "GUID": "0a5e430b-c10a-4591-a484-214b0e914f3e"
+      }
+    },
+    "3,43": {
+      "NameUsedInJavaScript": "类别销售单价",
+      "TotalRowSetting": {
+        "StaticText": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=COUNTA(统计字段list!AR4)"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "mysql数据库",
+        "ColumnName": "类别销售单价",
+        "GUID": "498683fa-395a-475e-8b3d-827eb685dc4c"
+      }
+    },
+    "3,50": {
+      "NameUsedInJavaScript": "_类别销售单价",
+      "TotalRowSetting": {
+        "StaticText": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=TEXTJOIN(\";\",TRUE,统计字段list!AY4)"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "mysql数据库",
+        "ColumnName": "类别销售单价",
+        "GUID": "89e43af8-c036-4c98-a644-999768edf3dc"
+      }
+    },
+    "5,22": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "8,22": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "11,28": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "12,2": {
+      "ListViewInfo": {
+        "Name": "Listview2",
+        "RowIndex": 12,
+        "ColumnIndex": 2,
+        "RowCount": 7,
+        "ColumnCount": 20,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "12,22": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "queryresult",
+            "TableValue": {
+              "TableName": "Role User Relation View",
+              "BindingInfos": [
+                {
+                  "BindingInfo": {
+                    "TableName": "Role User Relation View",
+                    "ColumnName": "RoleId",
+                    "GUID": "3ef37bfb-c8ba-4592-a127-a9e5a2ea10c7",
+                    "RelationBinding": {
+                      "RelatedTable": "Role Info View",
+                      "RelatedColumn": "RoleId",
+                      "DisplayColumn": "RoleName"
+                    }
+                  },
+                  "ColumnName": "RoleName"
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "Role User Relation View",
+                    "ColumnName": "roleanduser",
+                    "GUID": "01878bff-a6d8-4a7b-bdcf-8c248e7b3332"
+                  },
+                  "ColumnName": "roleanduser"
+                }
+              ]
+            },
+            "ID": "2bf538956a204d1cba47258fe86ea2a1"
+          },
+          {
+            "$type": "JsonDataSource.ImportJsonDataToListviewCommand, JsonDataSource",
+            "Listview": "Listview2",
+            "ListviewColumnInfos": [
+              {
+                "ListViewColumnCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=统计字段list!C14"
+                },
+                "PropertyName": "RoleName"
+              },
+              {
+                "ListViewColumnCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=统计字段list!L14"
+                },
+                "PropertyName": "roleanduser"
+              }
+            ],
+            "SourceCell": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=统计字段list!queryresult"
+            }
+          }
+        ],
+        "Text": "获取数据导入listview",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "17,37": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ExportPageToPdfCommand, ServerDesignerCommon",
+            "NewOtherName": ""
+          }
+        ],
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "20,2": {
+      "ListViewInfo": {
+        "Name": "Listview3",
+        "TableName": "mysql数据库",
+        "RowIndex": 20,
+        "ColumnIndex": 2,
+        "RowCount": 7,
+        "ColumnCount": 20,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium6",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "20,25": {
+      "ListViewInfo": {
+        "Name": "Listview4",
+        "TableName": "mysql数据库",
+        "RowIndex": 20,
+        "ColumnIndex": 25,
+        "RowCount": 14,
+        "ColumnCount": 12,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "ColumnOperation": 2
+      }
+    },
+    "21,2": {
+      "NameUsedInJavaScript": "产品类别",
+      "BindingInfo": {
+        "TableName": "mysql数据库",
+        "ColumnName": "类别",
+        "GUID": "b66f8f9a-0588-4f66-920d-eb5529ed6c4f"
+      }
+    },
+    "21,11": {
+      "NameUsedInJavaScript": "子产品集合",
+      "BindingInfo": {
+        "TableName": "mysql数据库",
+        "ColumnName": "子产品集合",
+        "GUID": "7e76e87e-4dd7-4ae3-812f-268dd032a606"
+      }
+    },
+    "21,25": {
+      "NameUsedInJavaScript": "类别",
+      "BindingInfo": {
+        "TableName": "mysql数据库",
+        "ColumnName": "类别",
+        "GUID": "185f3740-9c0a-4da4-9dc3-0b3db5066b38"
+      }
+    },
+    "21,31": {
+      "NameUsedInJavaScript": "子产品",
+      "BindingInfo": {
+        "TableName": "mysql数据库",
+        "ColumnName": "子产品",
+        "GUID": "bb1dc7b2-a456-48b8-8c8e-8637ac5d3154"
+      }
+    },
+    "28,11": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "mysql数据库",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "mysql数据库",
+                "ColumnName": "子产品集合",
+                "GUID": "862cf96d-80ab-4564-9922-9b6143b3c9bb"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=统计字段list!L32"
+              }
+            },
+            "ID": "9852596d8be047dd8bb23fbe2806cd99"
+          }
+        ],
+        "Text": "console 报错",
+        "TemplateKey": "_RS_Normal_Style6"
+      }
+    },
+    "31,11": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "CellDefaultValue": "白菜,西兰花,青菜,土豆"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 0
+      },
+      {
+        "WordWrap": true
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "@",
+        "Agency FB"
+      ]
+    },
+    "CellStyles": {
+      "2,2": 0,
+      "2,3": 0,
+      "2,4": 0,
+      "2,5": 0,
+      "2,6": 0,
+      "2,7": 0,
+      "2,8": 0,
+      "2,9": 0,
+      "2,10": 0,
+      "2,11": 0,
+      "2,12": 0,
+      "2,13": 0,
+      "2,14": 0,
+      "2,15": 0,
+      "2,16": 0,
+      "2,17": 0,
+      "2,18": 0,
+      "2,19": 0,
+      "2,20": 0,
+      "2,37": 0,
+      "2,38": 0,
+      "2,39": 0,
+      "2,40": 0,
+      "2,41": 0,
+      "2,42": 0,
+      "2,43": 0,
+      "2,44": 0,
+      "2,45": 0,
+      "2,46": 0,
+      "2,47": 0,
+      "2,48": 0,
+      "2,49": 0,
+      "5,22": 1,
+      "8,22": 1,
+      "12,11": 0,
+      "12,12": 0,
+      "12,13": 0,
+      "12,14": 0,
+      "12,15": 0,
+      "12,16": 0,
+      "12,17": 0,
+      "12,18": 0,
+      "12,19": 0,
+      "12,20": 0,
+      "12,21": 0,
+      "12,22": 2,
+      "20,2": 0,
+      "20,3": 0,
+      "20,4": 0,
+      "20,5": 0,
+      "20,6": 0,
+      "20,7": 0,
+      "20,8": 0,
+      "20,9": 0,
+      "20,10": 0,
+      "20,11": 0,
+      "20,12": 0,
+      "20,13": 0,
+      "20,14": 0,
+      "20,15": 0,
+      "20,16": 0,
+      "20,17": 0,
+      "20,18": 0,
+      "20,19": 0,
+      "20,20": 0,
+      "20,21": 0,
+      "20,25": 0,
+      "20,26": 0,
+      "20,27": 0,
+      "20,28": 0,
+      "20,29": 0,
+      "20,30": 0,
+      "20,31": 0,
+      "20,32": 0,
+      "20,33": 0,
+      "20,34": 0,
+      "20,35": 0,
+      "20,36": 0,
+      "31,11": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "3,2,1,9",
+    "3,11,1,10",
+    "4,2,7,19",
+    "2,22,2,5",
+    "5,22,2,14",
+    "13,2,1,9",
+    "12,22,2,5",
+    "14,2,5,20",
+    "13,11,1,11",
+    "22,2,5,20",
+    "21,2,1,9",
+    "21,11,1,11",
+    "22,25,12,12",
+    "21,25,1,6",
+    "21,31,1,6",
+    "8,22,2,14",
+    "28,11,2,11",
+    "31,11,2,14",
+    "3,37,1,6",
+    "4,37,12,22",
+    "3,43,1,7",
+    "3,50,1,9",
+    "17,37,2,5",
+    "2,29,2,5",
+    "11,28,2,5",
+    "2,2,1,9",
+    "2,11,1,10",
+    "2,37,1,6",
+    "2,43,1,7",
+    "2,50,1,9",
+    "12,2,1,9",
+    "12,11,1,11",
+    "20,2,1,9",
+    "20,11,1,11",
+    "20,25,1,6",
+    "20,31,1,6"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//epcEhRBvJD5+aQDwzqbzR8cQ2e53m2HtUOBGxvzXJKTtWE9e1b/JHE7bzUwWEAgDk6KubZdpBGmbQeqxKin/PJ4o/xlEgbsuYgB29hJEVGoVtGWDzYUO7B71ZBPSgkG00vKgbJRRKymootLb/aelBBA+MpWoayE/5M92TkWH757ZOjFsZcXYosrYmq++0j7vfbCremv8ekX3Lw3VQ+RvX54kEg3IbEzOQ46WHWNKBp+F0sq8qr+jT+2Z0Iw4iIG4JBvTCZo0GQzJZIyYrrH2nGEDke02rqTP7rzABPh0iiPMEAMaXeZwNEhLQEkere8UBhb8FigAD6ONwMiFWQb6wqJCkzhqMMVbZ7Hlw9mfh5onXkG45Kres8hqSOE1FBy+YitlnfrQZObbalRPxaf8fP1tBZoAT3ddK+tipH4+cwjVF6Xzlzvu2A46Pc/di7y6bYwwQU4vPB4POKYosaZ97o0JuTWsErhMWdq3RmUgD5rIl0gBoYqgHTKiO0vNtu9LN07M2v220uAa/6iNYbi7JObq/aHkM09OgvMTTgAeeoBoS+HYXgMPb5oGcH1y4Maoc7MB6hi/FU/nuT26IDEaI7BJwOP741dvESte77GhcVy22M7PwPpT6MYCYX00ih6UhEFHdK0DhKGvgRUS4JI5B2faw/6/vD4YvSTvGFvc+C1JUHIziMjYxKJblBgCoVYcn5YtIitrGFEQ4EVmlzktTpahmK+F4Ad0nsTY1Ajv3g8JobLWL7wd4Xl6mZf/u/usqegrq0U/QDT+JWhtLIqL5Ttbnd9uOf70a1ygXcQ7ai4SXE+WLZVTTZ5d47TY6NZlGQpxafjLI9AHE+5k7f63Reai6mFMM7TOUaKlqqLp65IX7F/qP5wbZ0VaVQQNg0D0uEphLt4t4t6fvM/sfL0iDg==|920

@@ -1,0 +1,481 @@
+{
+  "Rows": {
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "2,18": "export",
+    "2,25": "123456",
+    "5,18": "import(add)",
+    "8,18": "import(merge)",
+    "11,18": "import(replace)",
+    "14,9": "filepath",
+    "15,2": "导出table",
+    "15,9": "D:\\Download\\Chrome Download\\export20231111.xlsx",
+    "17,9": "password",
+    "18,9": "123456",
+    "19,2": "导入table",
+    "22,2": "导入table(传递空值)",
+    "22,12": "导入table(传递空值)"
+  },
+  "AttachInfos": {
+    "2,2": {
+      "ListViewInfo": {
+        "Name": "Listview1",
+        "TableName": "测试导入数据表",
+        "RowIndex": 2,
+        "ColumnIndex": 2,
+        "RowCount": 10,
+        "ColumnCount": 15,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "ColumnOperation": 2
+      }
+    },
+    "2,18": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ExportListViewToExcelCommand, ServerDesignerCommon",
+            "Password": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=导入需要设置密码!Z3"
+            },
+            "ListViewName": "Listview1",
+            "NewOtherName": "",
+            "IsOnlyExportValue": false
+          }
+        ],
+        "Text": "export",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "2,25": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "CellDefaultValue": "123456"
+      }
+    },
+    "3,2": {
+      "BindingInfo": {
+        "TableName": "测试导入数据表",
+        "ColumnName": "ID",
+        "GUID": "655f3054-c349-4b4b-968a-af2e865374a8"
+      }
+    },
+    "3,4": {
+      "NameUsedInJavaScript": "Text",
+      "BindingInfo": {
+        "TableName": "测试导入数据表",
+        "ColumnName": "Text",
+        "GUID": "21256a77-879b-49a8-b425-2e3f340b4be8"
+      }
+    },
+    "3,8": {
+      "NameUsedInJavaScript": "Integer",
+      "BindingInfo": {
+        "TableName": "测试导入数据表",
+        "ColumnName": "Integer",
+        "GUID": "fe2a473e-d1fd-4c4b-b5f7-0b1ee74a183a"
+      }
+    },
+    "5,18": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ImportExcelToListViewCommand, ServerDesignerCommon",
+            "ListViewName": "Listview1",
+            "ImportExcelToListViewColumnInfos": [
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=导入需要设置密码!E4"
+                },
+                "ColumnName": "Text001"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=导入需要设置密码!I4"
+                },
+                "ColumnName": "Integer002"
+              }
+            ]
+          }
+        ],
+        "Text": "import(add)",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "8,18": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ImportExcelToListViewCommand, ServerDesignerCommon",
+            "ListViewName": "Listview1",
+            "ImportExcelToListViewMode": 1,
+            "ImportExcelToListViewColumnInfos": [
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=导入需要设置密码!E4"
+                },
+                "ColumnName": "Text",
+                "IsPrimaryKey": true
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=导入需要设置密码!I4"
+                },
+                "ColumnName": "Integer"
+              }
+            ]
+          }
+        ],
+        "Text": "import(merge)",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "11,18": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ImportExcelToListViewCommand, ServerDesignerCommon",
+            "ListViewName": "Listview1",
+            "ImportExcelToListViewMode": 2,
+            "ImportExcelToListViewColumnInfos": [
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=导入需要设置密码!E4"
+                },
+                "ColumnName": "Text",
+                "IsPrimaryKey": true
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=导入需要设置密码!I4"
+                },
+                "ColumnName": "Integer"
+              }
+            ]
+          }
+        ],
+        "Text": "import(replace)",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "15,2": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+            "ServerCommandName": "导出table",
+            "Parameters": [
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "filepath",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=导入需要设置密码!J16"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "password",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=导入需要设置密码!J19"
+                }
+              }
+            ],
+            "RefreshAfterFinish": true,
+            "CheckDataValidation": true
+          }
+        ],
+        "Text": "导出table",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "15,9": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "CellDefaultValue": "D:\\Download\\Chrome Download\\export20231111.xlsx"
+      }
+    },
+    "18,9": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "CellDefaultValue": "123456"
+      }
+    },
+    "19,2": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+            "ServerCommandName": "导入table",
+            "Parameters": [
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "filepath",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=导入需要设置密码!J16"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "password",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=导入需要设置密码!J19"
+                }
+              }
+            ],
+            "RefreshAfterFinish": true,
+            "CheckDataValidation": true
+          }
+        ],
+        "Text": "导入table",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "22,2": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+            "ServerCommandName": "导入table",
+            "Parameters": [
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "filepath",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=导入需要设置密码!J16"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "password"
+              }
+            ],
+            "RefreshAfterFinish": true,
+            "CheckDataValidation": true
+          }
+        ],
+        "Text": "导入table(传递空值)",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "22,12": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+            "ServerCommandName": "导入table",
+            "Parameters": [
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "filepath",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=导入需要设置密码!J16"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "password",
+                "Value": "123456"
+              }
+            ],
+            "RefreshAfterFinish": true,
+            "CheckDataValidation": true
+          }
+        ],
+        "Text": "导入table(传递空值)",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 1
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "@",
+        "[AUTO]General"
+      ]
+    },
+    "CellStyles": {
+      "2,8": 0,
+      "2,9": 1,
+      "2,10": 1,
+      "2,11": 1,
+      "2,12": 1,
+      "2,13": 1,
+      "2,14": 1,
+      "2,15": 1,
+      "2,16": 1,
+      "2,25": 2,
+      "3,4": 3,
+      "3,8": 3,
+      "8,18": 4,
+      "8,19": 3,
+      "8,20": 3,
+      "8,21": 3,
+      "8,22": 3,
+      "8,23": 3,
+      "9,18": 3,
+      "9,19": 3,
+      "9,20": 3,
+      "9,21": 3,
+      "9,22": 3,
+      "9,23": 3,
+      "11,18": 4,
+      "11,19": 3,
+      "11,20": 3,
+      "11,21": 3,
+      "11,22": 3,
+      "11,23": 3,
+      "12,18": 3,
+      "12,19": 3,
+      "12,20": 3,
+      "12,21": 3,
+      "12,22": 3,
+      "12,23": 3,
+      "15,9": 2,
+      "18,9": 2,
+      "22,2": 3,
+      "22,12": 3,
+      "22,13": 3,
+      "22,14": 3,
+      "22,15": 3,
+      "22,16": 3,
+      "22,17": 3,
+      "22,18": 3,
+      "22,19": 3,
+      "22,25": 3,
+      "22,26": 3,
+      "22,27": 3,
+      "23,12": 3,
+      "23,13": 3,
+      "23,14": 3,
+      "23,15": 3,
+      "23,16": 3,
+      "23,17": 3,
+      "23,18": 3,
+      "23,19": 3,
+      "23,25": 3,
+      "23,26": 3,
+      "23,27": 3,
+      "28,18": 3,
+      "28,19": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "4,2,8,15",
+    "3,8,1,9",
+    "2,18,2,6",
+    "2,25,2,14",
+    "5,18,2,6",
+    "3,4,1,4",
+    "3,2,1,2",
+    "8,18,2,6",
+    "11,18,2,6",
+    "15,2,2,6",
+    "15,9,2,17",
+    "18,9,2,17",
+    "19,2,2,6",
+    "22,2,2,8",
+    "22,12,2,8",
+    "2,2,1,2",
+    "2,4,1,4",
+    "2,8,1,9"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//mIWNJj4BGyKj1LaY+DEVAe2L6Y8rENG61BCmS6E12qaeB+hhWT3LYq/X+Tjn0dr3uJteV5rXfhQrfWd8dtBmOSur1SRdQZUR93BZ8cVpmfzwps2XCOSdiIU2t998kXEv60xt5j4YkpY+Z5RynukhJ8fJauGVKDeVOHvn/LzlPNkEZeG60clFoXnm8xNPXrw3/7HwZYixqkiTKd+nhCu/Fj2f4GHV2Cim3LTBnZULfnwuozk9EQJzs03+BWw/n5E88aHGBEJ7hK9X16XZ4mcMAGGLOVHdZkluE6ySedNLxSCbLCEgDOYyg7mO69GOhOQ/JyZTOuvVRZXtFjonWYTPKOgTB6g6lzHVwXSQbhrLQ/Sz1V0sLupAi0wiJlSlAvqdmpH3N8dT/kDk5/jR5PJ8XzTIo10KOoHRVJHW/cdEYW63mX4Aqsst8031+aPZbXQk986AX4hkzCK2iWB22ahRwnkf/D+rVrsef3BCiZ/n567xKEVksLT2kWWXLqs1ePBbivHJ7tlfGjS0tRKEs9wh9nQMq3HJ+RvUpLkizK2lzqaqaDm5Hm9ryaaRjFMulUH30zt31d1Id/wijmV0Cw4Noz8EX3SG3ptyK9FPd0stL9e3mtBpb/xLChAuHJ/HIyhXbeQcShnGoPfd6+aS2lUzPTkxgv77/txklWxj0DuRh8pEJOKhpTYCJKaa2IGvWWGLdyqF3ShCBMq+2GzXkbNV7AOakZtFVq6MJ77lGLEHttUVAdWKojC8j7kWwhG/I8Duvev8j8Zj5hVHl7DhUpfcui3sSLE+DHQAJwdzvO2LxxjsW1w+xIGkCibETy7cZEu09GpT3qyEIroN+vYtLOc0PVCY8SOyu8tOlpTNdgUcLR1JuzlUm37iLsDNknCzF2yuQfZZAQE1f1RWhCuMj3R6/A==|920

@@ -1,0 +1,22 @@
+[
+  {
+    "ConnectionString": "Data Source=xa-dd3-fss19o19;Initial Catalog=TestDB;Persist Security Info=True;User ID=sa;Password=xA20200326",
+    "DataBaseType": "347a1ed5-25f0-4a4b-846c-8d69cedcf33d",
+    "ID": "SqlServer1"
+  },
+  {
+    "ConnectionString": "Server=xa-dd3-fs16ms8;User ID=AutoTest;Password=xA20200326;Database=testdb;Port=3306",
+    "DataBaseType": "6f9b2f11-4f6a-43db-9b65-bbd46872e09d",
+    "ID": "MySql1"
+  },
+  {
+    "ConnectionString": "Host=xa-dd3-fgcp13d8;Username=postgres;Password=xA20200326;Database=TestDB;Port=5432",
+    "DataBaseType": "cc38d1c8-62bd-4c51-bac1-f5fccb9e5606",
+    "ID": "PostgreSQL1"
+  },
+  {
+    "ConnectionString": "DATA SOURCE=xa-dd3-fss19o19;PASSWORD=xA20200326;USER ID=C##AutoTest",
+    "DataBaseType": "cbdb540e-ded5-415e-b8cd-5b1dba43a89e",
+    "ID": "Oracle1"
+  }
+]

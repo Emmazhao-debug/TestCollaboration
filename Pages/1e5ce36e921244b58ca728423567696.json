@@ -1,0 +1,56 @@
+{
+  "Rows": {
+    "Count": 8
+  },
+  "Cols": {
+    "Count": 16
+  },
+  "AttachInfos": {
+    "1,2": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      },
+      "TemplateCellSource": "企业"
+    },
+    "4,2": {
+      "TemplateCellSource": "电话"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Formatter": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "@",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "1,2": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "1,2,2,11",
+    "4,2,2,11"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "firstpage"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//7fqHKXli7d9D5u4O1Z5HJP1GtGW22Jh4YFjX4C3fUw7PXLpaY6u8ObC8JOu5CyQCE4E+Vc/P/yuT99+b2sim+zKP/VepA/BVyx8kNY4MZ9D8H1+bMdBSJwKje8p9/Uu/m8iz3/ZcgfAgSEddRtZljCXxwJdDqhaUI3J9ix5BmglFZ+XFdCJhIUimu0oPOnZWH6X8WGFWR2lqgvrzwwF6Q7NAQgMz0vszwgH37PDAnxl8qk9/UoUTD6bvA/mHwexOQGhMkMKUQX+PppS49krykKYxIg32Qtz++TSEQxnOSWl4R4ERaRIhdwgUup4qX6EgcBEOHNKyPL484dOZAHmrfqD4UIHb+AAUCqxRDeSmPi09GdlZN5PF5f/yZuGym3uGBcEJXiUwRypsHNFnNy4hTxEclqUqsurGnMBsTkozLXxCqF+vzoF9SU8mKfMfefUFtKFqxcI4D06LbHerbMgsEuN0aZvxF+1boXo7ooRpwAV4Nfqoh1zP8eHK7sqBOm1qAbJzqcEIoXl8qaQf1Zbnnv2Rei82ifhKlj5XHB2B9V7MVLtIXk4mbhcn5CMdXHgzkfMeUo9miNUHFzo9I92Rv45mob/T8leDfR2m7SY9lqaQkYzWvYj3jKPpVo+KCUMTei2+kYoPrQg8L/WTzzNKy9Q9iKH+wyQJ3SM5TlPTx+y8X+/YWO+Dk0uqqnTc4ah6h1wRSrGCkGLOPN9s9JfnQ7n+96I1IYZJcZN/bvv6Bc8s0MIFgR4q72TBRMmOkpr1osT2XPZOZrFxiSxHHL7jtLO/LJRykgRELD44q/7ieQ+b8bszf+7/lEtvEZ3NlXZyo0UNmO/yL3aFfzJ/SA13nWq7dyYL+gNHJEX9BcYuUmuiqkvH53MSiYkJs4VEyda+ByjDZpXgojRSpt818WBMAQ==|920

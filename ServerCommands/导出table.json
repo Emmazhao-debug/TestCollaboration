@@ -1,0 +1,85 @@
+{
+  "Name": "导出table",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "ArrayItems": [],
+          "Name": "filepath",
+          "DataValidationInfo": {},
+          "TestData": "D:\\Download\\Chrome Download\\export20231111.xlsx"
+        },
+        {
+          "ArrayItems": [],
+          "Name": "password",
+          "DataValidationInfo": {},
+          "TestData": "123456"
+        }
+      ],
+      "InvokeTriggerTestData": {
+        "UserName": "Administrator"
+      }
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.Commands.ServerImportExportExcelCommand, ServerDesignerCommon",
+      "ExcelOperation": 1,
+      "FilePath": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=filepath"
+      },
+      "Password": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=password"
+      },
+      "TableName": "测试导入数据表",
+      "Columns": [
+        {
+          "BindingColumn": {
+            "TableName": "测试导入数据表",
+            "ColumnName": "ID",
+            "GUID": "12da520a-08f7-4da2-9533-a4f35d342aa2"
+          },
+          "ExcelColumnNameOrIndex": "ID",
+          "IsPrimaryKey": true
+        },
+        {
+          "BindingColumn": {
+            "TableName": "测试导入数据表",
+            "ColumnName": "Text",
+            "GUID": "7ba8f1e8-d5a0-4e6f-ba1c-22e04d0c30b8"
+          },
+          "ExcelColumnNameOrIndex": "Text"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "测试导入数据表",
+            "ColumnName": "Integer",
+            "GUID": "ce6e3ab8-a6df-48d2-9568-63dd5741167b"
+          },
+          "ExcelColumnNameOrIndex": "Integer"
+        }
+      ]
+    }
+  ],
+  "ReturnProperties": []
+}

@@ -1,0 +1,60 @@
+{
+  "Name": "Role User Relation View",
+  "Columns": [
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "RoleId",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.String",
+      "MaxLength": -1,
+      "Name": "UserName",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "System.Int64",
+      "MaxLength": -1,
+      "Name": "FromOrganization",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.StatisticColumnSaveData, ServerDesignerCommon",
+      "AggregateFunction": 5,
+      "DataColumnName": "UserName",
+      "Name": "roleanduser",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "BuiltInViewInfo": {
+    "ViewName": "Role User Relation View",
+    "SourceTableName": "FGC_UMV_RUR",
+    "CreateViewSql": "SELECT \"RoleId\" AS \"RoleId\", \"UserName\" AS \"UserName\", \"FromOrganization\" AS \"FromOrganization\" FROM \"FGC_UMV_RUR\"",
+    "ViewType": 6
+  },
+  "PrimaryKey": [
+    "RoleId",
+    "UserName"
+  ],
+  "Relations": [
+    {
+      "PrimaryTable": "UserInfoView",
+      "PrimaryColumn": "UserName",
+      "ForeignTable": "Role User Relation View",
+      "ForeignColumn": "UserName",
+      "IsDetailTableRelation": false
+    },
+    {
+      "PrimaryTable": "Role Info View",
+      "PrimaryColumn": "RoleId",
+      "ForeignTable": "Role User Relation View",
+      "ForeignColumn": "RoleId",
+      "IsDetailTableRelation": false
+    }
+  ],
+  "Indexes": []
+}
