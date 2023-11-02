@@ -103,7 +103,17 @@
   },
   {
     "ModuleName": "PCPage/Page1",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "GRAPECITY\\EmmaZhao",
+      "Email": "Emma.zhao@developertools.com"
+    },
+    "LockDateTime": "2023-11-02T10:28:23.8262392+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\Page1.json",
+      "Pages\\Page1.rd"
+    ]
   },
   {
     "ModuleName": "Pages/ビルトイン ページ",
